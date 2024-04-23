@@ -1,5 +1,7 @@
 import MiniPlaylistCard from "../../miniPlaylistCard/miniPlaylistCard";
 import style from "./index.module.scss";
+import { CiCircleChevLeft } from "react-icons/ci";
+import { CiCircleChevRight } from "react-icons/ci";
 
 export default function GoodAfternoon({ playlists }) {
   if (!playlists) {
@@ -7,7 +9,19 @@ export default function GoodAfternoon({ playlists }) {
   }
   return (
     <div className={style.goodAfternoon}>
+      <div className="arrow">
+        <CiCircleChevLeft />
+        <CiCircleChevRight />
+      </div>
       <h2>Good afternoon</h2>
+      <style>
+        {`
+         .arrow *{
+           width:45px;
+           height:45px;
+          }
+        `}
+      </style>
       <br />
       <div className={style.goodAfternoon_playlists}>
         {playlists.map((playlist) => (
