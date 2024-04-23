@@ -1,0 +1,86 @@
+.tracksList {
+
+  
+  .tracksList__table {
+    position: relative;
+    width: 100%;
+    border: 1px;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-height: 200px;
+
+    .tracksList__noLikedSongs {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+  transform: translate(-50%, -50%);
+    }
+   
+
+    .tracksList__table__head {
+      border: 1px solid transparent;
+      border-bottom: 1px solid #666666;
+      height: 30px;
+      th {
+        text-align: left;
+        padding-left: 10px;
+      }
+    }
+
+    .tracksList__table__row {
+      height: 50px;
+      width: 100%;
+      border: 1px solid transparent !important;
+      border-bottom: 24px solid transparent !important;
+      padding: 10px 10px;
+    }
+
+    .tracksList__table__col1 {
+      text-align: center !important;
+      padding: 10px 0;
+      width: 5%;
+    }
+    .tracksList__table__col2 {
+      width: 40%;
+      text-align: center;
+    }
+
+    .tracksList__table__col3 {
+      padding-left: 12px;
+      width: 30%;
+    }
+
+    .tracksList__table__col4 {
+      text-align: left;
+      width: 5%;
+
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .tracksList__table__col__div {
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+      text-align: left;
+
+      h5 {
+        font-size: inherit;
+        font-weight: 400;
+        margin-bottom: 4px;
+      }
+
+      p {
+        color: #b3b3b3;
+        font-size: 12px;
+      }
+    }
+  }
+}

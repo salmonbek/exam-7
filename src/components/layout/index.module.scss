@@ -1,0 +1,17 @@
+.layout {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .layout__main {
+    min-height: inherit;
+  }
+  .layout__main__pages {
+    background-color: #121212;
+    width: 100%;
+    min-height: 100%;
+    padding: 30px 32px;
+  }
+
+  
+}

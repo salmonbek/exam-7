@@ -1,0 +1,8 @@
+.goodAfternoon {
+}
+
+.goodAfternoon_playlists {
+  display: grid;
+  gap: 16px 24px;
+  grid-template-columns: repeat(auto-fit, minmax(43%, 1fr));
+}

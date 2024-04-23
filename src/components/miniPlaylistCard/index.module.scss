@@ -1,0 +1,22 @@
+.miniPlaylistCard {
+  column-gap: 12px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 80px;
+  overflow: hidden;
+
+  div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+    height: inherit;
+    img {
+      height: inherit;
+    }
+  }
+
+  p {
+    vertical-align: middle;
+    display: inline-block;
+  }
+}

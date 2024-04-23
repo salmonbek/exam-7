@@ -1,0 +1,151 @@
+.left__sidebar,
+.right__sidebar {
+  min-width: 200px;
+  width: 25%;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 30px 20px 10px;
+  font-size: 18px;
+
+  i {
+    font-size: 24px;
+  }
+}
+
+.left__sidebar {
+  .left__sidebar__panel {
+  }
+
+  .left__sidebar__panel__pages {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #282828;
+
+    margin-bottom: 16px;
+
+    li {
+      display: flex;
+      column-gap: 12px;
+      align-items: center;
+    }
+
+    .heartButton {
+      i {
+        padding: 6px;
+        font-size: 14px;
+        border-radius: 6px;
+        color: white;
+        background: linear-gradient(133.58deg, #3822ea 3.13%, #c7e9d7 97.71%);
+      }
+    }
+  }
+
+  .left__sidebar__tracks {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-transform: capitalize;
+
+    li:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.right__sidebar {
+  .right__sidebar__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  img {
+    margin-bottom: 6px;
+  }
+
+  .right__sidebar__button {
+    background-color: white;
+    padding: 10px 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: #181818;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 0px;
+    cursor: pointer;
+  }
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 60px;
+  background-color: #181818;
+
+  padding: 15px 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  .bottomPlayer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+
+    input {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: red;
+      background-color: rgba(255, 255, 255, 0.705);
+
+      border-radius: 6px;
+      height: 6px;
+      min-width: 200px;
+
+      &::-webkit-slider-thumb {
+        appearance: none;
+        background-color: white;
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  .bottom__playButton {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 0;
+    color: #181818;
+    cursor: pointer;
+
+    i {
+      color: inherit;
+      font-size: 20px;
+      line-height: 10px;
+    }
+  }
+
+  .bottom__audio {
+    display: none;
+  }
+}
